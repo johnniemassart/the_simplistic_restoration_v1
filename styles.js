@@ -20,7 +20,8 @@ images[3] = 'images/palm-trees.jpeg';
 images[4] = 'images/nyc-stairs.jpeg';
 
 
-function changeImg() {
+// function changeImg() {
+const changeImg = function() {
     // document.slide.src = images[i];
     document.querySelector('.loader-images').src = images[i];
 
@@ -31,22 +32,28 @@ function changeImg() {
        i = 0; 
     } */
 
-    setTimeout("changeImg()", time);
-}
+//     setTimeout("changeImg()", time);
+    setTimeout('changeImg()', time);
+};
+// }
 
+// setTimeout("changeImg()", 500);
 setTimeout("changeImg()", 500);
+    
 
 // LOADER PAGE TRANSITION TO HOME PAGE
 const loader = document.querySelector('.div-container');
 const container = document.querySelector('.container');
 
-function loadit() {
+// function loadit() {
+const loadit = function() {
     setTimeout(() => {
         loader.style.opacity = 0;
         loader.style.display = 'none';
         container.style.display = 'grid';
     }, 1800);
-}
+// }
+};
 
 loadit();
 
@@ -59,13 +66,15 @@ homeImgs[1] = 'images/johnnie_cali.jpeg';
 homeImgs[2] = 'images/colony_palms.png';
 
 
-function homeImgDisplay() {
+// function homeImgDisplay() {
+const homeImgDisplay = function() {
     for(var count=0; count < homeImgs.length; count++) {
         const newImage = document.createElement('img');
         newImage.src = homeImgs[count];
         homeImgContainer.appendChild(newImage);
     } 
-}
+// }
+};
 
 /* homeImgDisplay();
 homeImgDisplay();
