@@ -1,5 +1,3 @@
-function setUp() {
-
 // CURSOR
 const mycursor = document.querySelector('.cursor');
 
@@ -20,8 +18,7 @@ images[3] = 'images/palm-trees.jpeg';
 images[4] = 'images/nyc-stairs.jpeg';
 
 
-// function changeImg() {
-const changeImg = function() {
+function changeImg() {
     // document.slide.src = images[i];
     document.querySelector('.loader-images').src = images[i];
 
@@ -32,30 +29,25 @@ const changeImg = function() {
        i = 0; 
     } */
 
-//     setTimeout("changeImg()", time);
-    setTimeout('changeImg()', time);
-};
-// }
+    setTimeout("changeImg()", time);
 
-// setTimeout("changeImg()", 500);
-setTimeout("changeImg()", 500);
-    
+}
+
+// setTimeout("changeImg()", 500);    
 
 // LOADER PAGE TRANSITION TO HOME PAGE
 const loader = document.querySelector('.div-container');
 const container = document.querySelector('.container');
 
-// function loadit() {
-const loadit = function() {
+function loadit() {
     setTimeout(() => {
         loader.style.opacity = 0;
         loader.style.display = 'none';
         container.style.display = 'grid';
     }, 1800);
-// }
-};
+}
 
-loadit();
+// loadit();
 
 // HOME IMG DISPLAY
 const homeImgContainer = document.getElementById('homeImg');
@@ -66,15 +58,13 @@ homeImgs[1] = 'images/johnnie_cali.jpeg';
 homeImgs[2] = 'images/colony_palms.png';
 
 
-// function homeImgDisplay() {
-const homeImgDisplay = function() {
+function homeImgDisplay() {
     for(var count=0; count < homeImgs.length; count++) {
         const newImage = document.createElement('img');
         newImage.src = homeImgs[count];
         homeImgContainer.appendChild(newImage);
     } 
-// }
-};
+}
 
 /* homeImgDisplay();
 homeImgDisplay();
@@ -119,8 +109,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-}
 
 window.onload = function() {
-    setUp();
+    setTimeout("changeImg()", 500);
+    loadit();
 };
