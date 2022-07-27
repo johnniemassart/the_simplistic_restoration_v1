@@ -495,8 +495,9 @@ body {
 .thoughts-box {
   grid-area: mainContent;
   text-align: center;
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
+  scrollbar-width: none;
 }
 
 .thoughts-box::-webkit-scrollbar {
@@ -559,13 +560,14 @@ body {
   height: 85%;
   margin: 0 auto;
   max-height: 100%;
-  overflow-y: auto;
+  overflow-y: scroll;
   transform: scale(0);
   background: whitesmoke;
   color: rgb(32, 32, 32);
   transition: 0.3s ease;
   display: flex;
   flex-direction: column;
+  scrollbar-width: none;
 }
 
 .modal.active {
