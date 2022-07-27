@@ -884,6 +884,9 @@ body {
   .cursor {
     display: none;
   }
+  body {
+    overscroll-behavior: none;
+  }
   .thoughts-box {
     overscroll-behavior: contain;
   }
