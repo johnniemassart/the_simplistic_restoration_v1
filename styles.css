@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   overscroll-behavior: none;
-  touch-action: none;
   cursor: none;
 }
 
@@ -884,6 +883,9 @@ body {
 @media (any-pointer: coarse) {
   .cursor {
     display: none;
+  }
+  body {
+    overscroll-behavior: none;
   }
 }
 
