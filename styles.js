@@ -33,7 +33,8 @@ function changeImg() {
 
 }
 
-// setTimeout("changeImg()", 500);    
+// setTimeout("changeImg()", 500);   
+window.onload = setTimeout("changeImg()", 500);
 
 // LOADER PAGE TRANSITION TO HOME PAGE
 const loader = document.querySelector('.div-container');
@@ -48,6 +49,7 @@ function loadit() {
 }
 
 // loadit();
+window.onload = loadit();
 
 // HOME IMG DISPLAY
 const homeImgContainer = document.getElementById('homeImg');
@@ -109,8 +111,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-
-window.onload = function() {
-    setTimeout("changeImg()", 500);
-    loadit();
-};
