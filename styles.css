@@ -886,13 +886,14 @@ body {
   }
   body {
     overscroll-behavior: none;
+    background-color: grey;
   }
-  .thoughts-box {
+/*   .thoughts-box {
     overscroll-behavior: contain;
   }
   .modal {
     overscroll-behavior: contain;
-  }
+  } */
 }
 
 /* CHANGE GRID DEPENDING ON WIDTH SIZE */
