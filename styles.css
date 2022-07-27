@@ -502,6 +502,7 @@ body {
 
 .thoughts-box::-webkit-scrollbar {
   display: none;
+  -webkit-appearance: none;
 }
 
 .thoughts-nav {
@@ -576,6 +577,7 @@ body {
 
 .modal.active::-webkit-scrollbar {
   display: none;
+  -webkit-appearance: none;
 }
 
 .modal-header {
