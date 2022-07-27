@@ -1,5 +1,3 @@
-function settingUp() {
-
 // CURSOR
 const mycursor = document.querySelector('.cursor');
 
@@ -110,9 +108,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-}
-
-
-window.onload = function(){
-    settingUp();
-};
