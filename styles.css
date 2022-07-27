@@ -884,15 +884,15 @@ body {
   .cursor {
     display: none;
   }
-  html {
+  body {
     overscroll-behavior: none;
   }
-/*   .thoughts-box {
+  .thoughts-box {
     overscroll-behavior: contain;
   }
   .modal {
     overscroll-behavior: contain;
-  } */
+  }
 }
 
 /* CHANGE GRID DEPENDING ON WIDTH SIZE */
